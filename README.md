@@ -2,15 +2,15 @@
 
 To get started, download the Visual Wake Words dataset for testing purposes from the Han Lab's pre-built minival set from here (https://www.dropbox.com/s/bc7qi89ezra9711/vww-minival.tar?dl=0), around 380MB.
 
-Place the 'vww-minival' folder (uncompressed) into the './data' directory for use with the commands given below:
+Place the ```vww-minival``` folder (uncompressed) into the ```./data``` directory for use with the commands given below:
 
-To evaluate the PyTorch models quantized with fp32, run the following:
+- To evaluate the PyTorch models quantized with fp32, run the following:
 
-python ./eval_torch.py --net_id=mcunet-vww2 --dataset=vww --data-dir=./data/vww-minival/dataset/vww-s256
+```python ./eval_torch.py --net_id=mcunet-vww2 --dataset=vww --data-dir=./data/vww-minival/dataset/vww-s256```
 
-To evaluate the TF-Lite models quantized with int8, run the following: 
+- To evaluate the TF-Lite models quantized with int8, run the following: 
 
-python ./eval_tflite.py --net_id=mcunet-vww2 --dataset=vww --data-dir=./data/vww-minival/dataset/vww-s256
+```python ./eval_tflite.py --net_id=mcunet-vww2 --dataset=vww --data-dir=./data/vww-minival/dataset/vww-s256```
 
 Below is the README for the original MCUNet repo that this repo forks, directly from the MIT Han Lab.
 
